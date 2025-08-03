@@ -15,7 +15,7 @@ export const userRouter = new Hono<{
 
 
 
-userRouter.post('/signUp', async (c) => {
+userRouter.post('/signup', async (c) => {
   const body = await c.req.json()
   console.log("Received body:", body);
   
@@ -55,7 +55,7 @@ userRouter.post('/signUp', async (c) => {
 })
 
 
-userRouter.post('/signIn', async(c) => {
+userRouter.post('/signin', async(c) => {
   const body = await c.req.json()
    const { success } = signinInput.safeParse(body)
   if(!success){

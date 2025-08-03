@@ -9,8 +9,8 @@
   ,
   "vars": {
     "MY_VAR": "my-variable",
-    "DATABASE_URL": "",
-    "JWT_SECRET": ""
+    "DATABASE_URL": "prisma+postgres://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqd3RfaWQiOjEsInNlY3VyZV9rZXkiOiJza183c1l0Mm5pRkw5anlrR0ZUUjJfcW4iLCJhcGlfa2V5IjoiMDFLMTBBWkE5M1M5UkRaMTBOTk05MVFENkUiLCJ0ZW5hbnRfaWQiOiJkNjVhNGNlMjBiZTFlNzVlMDVjYmY4YmY5ODMyNzVmOTUzZTdkMDBiODc5ZDU1MDhhNTcwYWFhYTJiZDM2NTczIiwiaW50ZXJuYWxfc2VjcmV0IjoiYWQzNTQwZjctNGMxYS00MjY2LWIwNDAtYWRkYTRlZDA4MWNmIn0.y4pOu3Ir2wQbjhuRxmdzkcv1-lh47SK6TpxsW_MHk5s",
+    "JWT_SECRET": "prod_jwt_secret"
   },
   // "kv_namespaces": [
   //   {
