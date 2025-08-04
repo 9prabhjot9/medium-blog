@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Button } from "./ui/button";
-import { LabelledInput } from "./LabelledInput"; // Make sure path is correct
+import { LabelledInput } from "./LabelledInput"; 
 import axios from "axios";
 import { BACKEND_URL } from "@/config";
+
 
 
 
@@ -23,10 +24,13 @@ export const Auth = ({ type }: AuthProps) => {
   async function sendRequest() {
     try { 
         const response = await axios.post(`${BACKEND_URL}/api/v1/user/${type === "signup" ? "signup" : "signin" }`, postInputs)
+        console.log("Login response", response.data);
+        
         localStorage.setItem("token", response.data.jwt)
         navigate("/Blogs")
-    }catch (e) {
-
+    }catch (e:any) {
+        console.log("Login failed", e.response?.data || e.messag);
+        
     }
   }
 

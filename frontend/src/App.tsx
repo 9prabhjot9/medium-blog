@@ -3,6 +3,8 @@ import './App.css'
 import { Signup } from './pages/Signup'
 import { Signin } from './pages/Signin'
 import { Blogs } from './pages/Blogs'
+import { Blog } from './pages/Blog'
+import { Publish } from './components/Publish'
 
 function App() {
 
@@ -14,7 +16,9 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/signin" element={<Signin />} />
           <Route path="/Blogs" element={<Blogs />} />
-          {/* <Route path="/Blog/:id" element={<Blog />} /> */}
+          <Route path="/Blog/:id" element={<Blog />} />
+          <Route path="/publish" element={<Publish />} />
+
         </Routes>
       </BrowserRouter>
     </>
