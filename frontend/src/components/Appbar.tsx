@@ -1,6 +1,6 @@
 import { Avatar } from "./BlogCard"
 import { Link, useLocation } from "react-router-dom"
-import NewBlogButton from "./ui/newBlogBUtton"
+import NewBlogButton from "./ui/NewBlogButton"
 
 export const Appbar = () => {
   const location = useLocation()
