@@ -1,80 +1,118 @@
-
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const PublishButton = () => {
   return (
     <StyledWrapper>
-      <button className="button">
-        <p>New Blog +</p>
+      <button className="btn-53">
+        <div className="original">Publish</div>
+        <div className="letters">
+          <span>P</span>
+          <span>U</span>
+          <span>B</span>
+          <span>L</span>
+          <span>I</span>
+          <span>S</span>
+          <span>H</span>
+        </div>
       </button>
     </StyledWrapper>
   );
 };
 
 const StyledWrapper = styled.div`
-  .button {
-    all: unset;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    padding: 0.4em 1.5em;
-    border: #02b875 solid 0.15em;
-    border-radius: 999px;
-    color: #02b875;
-    font-size: 1em;
-    font-weight: 600;
+  .btn-53,
+  .btn-53 *,
+  .btn-53 :after,
+  .btn-53 :before,
+  .btn-53:after,
+  .btn-53:before {
+    border: 0 solid;
+    box-sizing: border-box;
+  }
+
+  .btn-53 {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: button;
+    background-color: #1A8917; /* Medium green */
+    color: #fff;
     cursor: pointer;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+      Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+      Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 8px 20px;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
     overflow: hidden;
-    transition: border 300ms, color 300ms;
-    user-select: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    margin-left: 10px
   }
 
-  .button p {
-    z-index: 1;
+  .btn-53:hover {
+    background-color: #161801
   }
 
-  .button:hover {
-    color: #212121;
+  .btn-53:active {
+    background-color: #0f5c0e;
   }
 
-  .button:active {
-    border-color: #027d54;
-  }
-
-  .button::after,
-  .button::before {
-    content: "";
+  .btn-53 .original {
+    background: #1A8917;
+    color: white;
     position: absolute;
-    width: 6em;
-    aspect-ratio: 1;
-    background: #02b875;
-    opacity: 50%;
-    border-radius: 50%;
-    transition: transform 500ms, background 300ms;
+    inset: 0;
+    display: grid;
+    place-content: center;
+    transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);
   }
 
-  .button::before {
-    left: 0;
-    transform: translateX(-6em);
+  .btn-53:hover .original {
+    transform: translateY(100%);
   }
 
-  .button::after {
-    right: 0;
-    transform: translateX(6em);
+  .btn-53 .letters {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
   }
 
-  .button:hover:before {
-    transform: translateX(-0.5em);
+  .btn-53 span {
+    opacity: 0;
+    transform: translateY(-15px);
+    transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1), opacity 0.2s;
   }
 
-  .button:hover:after {
-    transform: translateX(0.5em);
+  .btn-53 span:nth-child(2n) {
+    transform: translateY(15px);
   }
 
-  .button:active:before,
-  .button:active:after {
-    background: #027d54;
+  .btn-53:hover span {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .btn-53:hover span:nth-child(2) {
+    transition-delay: 0.05s;
+  }
+  .btn-53:hover span:nth-child(3) {
+    transition-delay: 0.1s;
+  }
+  .btn-53:hover span:nth-child(4) {
+    transition-delay: 0.15s;
+  }
+  .btn-53:hover span:nth-child(5) {
+    transition-delay: 0.2s;
+  }
+  .btn-53:hover span:nth-child(6) {
+    transition-delay: 0.25s;
+  }
+  .btn-53:hover span:nth-child(7) {
+    transition-delay: 0.3s;
   }
 `;
 
