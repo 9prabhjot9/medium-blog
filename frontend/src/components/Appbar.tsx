@@ -32,6 +32,9 @@ export const Appbar = () => {
         <button className="cursor-pointer " onClick={handleClick} >
         <Avatar name={username} size="big" />
         </button>
+        <div>
+          hello
+        </div>
       </div>
     </div>
   )
