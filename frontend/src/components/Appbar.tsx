@@ -1,5 +1,6 @@
 import { Avatar } from "./BlogCard"
 import { Link, useNavigate } from "react-router-dom"
+import NewBlogButton from "./ui/NewBlogButton"
 
 
 export const Appbar = () => {
@@ -21,9 +22,13 @@ export const Appbar = () => {
       </Link>
 
       <div className="flex items-center gap-4">
-        <button className="bg-amber-950" onClick={handleClick2}>
-          New Blog
-        </button>
+
+        <NewBlogButton 
+        label="New Blog +"
+        onClick={handleClick2}/>
+
+
+
         <button className="cursor-pointer " onClick={handleClick} >
         <Avatar name={username} size="big" />
         </button>
