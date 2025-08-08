@@ -1,13 +1,11 @@
 import { Avatar } from "./BlogCard"
 import { Link, useLocation, useNavigate } from "react-router-dom"
-import NewBlogButton from "./ui/NewBlogButton"
+
 
 
 
 
 export const Appbar = () => {
-  const location = useLocation()
-  const pathname = location.pathname
   const username = localStorage.getItem("username") || "Guest"
   const navigate = useNavigate()
 
