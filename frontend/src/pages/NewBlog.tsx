@@ -5,6 +5,8 @@ import { Appbar } from "@/components/Appbar"
 import PublishButton from "@/components/ui/publishButton"
 import axios from "axios"
 import { BACKEND_URL } from "@/config"
+// import MyEditor from "@/components/MyEditor"
+
 
 export default function Publish() {
   const [title, setTitle] = useState("")
@@ -44,7 +46,7 @@ export default function Publish() {
             value={title}
             onChange={(e) => setTitle(e.target.value)}
           />
-
+          {/* <MyEditor  /> */}
           <TiptapEditor content={description} onChange={setDescription} />
 
           {/* ✅ Button inside the form and triggers submit */}
