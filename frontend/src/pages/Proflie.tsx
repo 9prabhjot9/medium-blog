@@ -1,4 +1,4 @@
-import { Appbar } from "@/components/Appbar"
+
 import { Link } from "react-router-dom"
 
 export const Profile = () => {
