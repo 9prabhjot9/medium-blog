@@ -3,6 +3,7 @@ import { MarkButton } from "@/components/tiptap-ui/mark-button"
 
 export default function MyEditor({ editor }: { editor: Editor }) {
   return (
+    
     <EditorContext.Provider value={{ editor }}>
       {/* Toolbar */}
       <div className="flex gap-2 mb-2">
@@ -16,7 +17,9 @@ export default function MyEditor({ editor }: { editor: Editor }) {
       </div>
 
       {/* Editor */}
-      <EditorContent editor={editor} role="presentation" />
+      
+      <EditorContent editor={editor} role="presentation" className="outline-1 focus:outline-none" />
+      
     </EditorContext.Provider>
   )
 }
