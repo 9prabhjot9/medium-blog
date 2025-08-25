@@ -4,13 +4,13 @@ import { Link } from "react-router-dom"
 export const Profile = () => {
     return (
         <div>
-            {/* Topbar (don’t change) */}
+            {/* Topbar */}
             <div className="border-b flex justify-between items-center px-10 py-6">
                 <Link to="/blogs">
                     <div className="text-2xl font-semibold cursor-pointer">Medium</div>
                 </Link>
                 <div className="flex items-center gap-4">
-                    {/* You can add icons or profile menu here */}
+                    
                 </div>
             </div>
 
