@@ -161,14 +161,14 @@ export default function LandingPage() {
                 </div>
                 <CardContent className="p-6">
                   <div className="text-sm text-gray-500 mb-2">5 min read • 2 days ago</div>
-                  <h3 className="text-xl font-bold text-black mb-3 group-hover:text-yellow-600 transition-colors duration-300">
+                  <h3 className="text-xl font-bold text-black mb-3">
                     {article.title}
                   </h3>
                   <p className="text-gray-600 leading-relaxed">
                     Discover how less can be more when it comes to crafting compelling stories that resonate with
                     readers.
                   </p>
-                  <div className="mt-4 flex items-center text-yellow-600 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-2 group-hover:translate-x-0">
+                  <div className="mt-4 flex items-center  opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-2 group-hover:translate-x-0">
                     <span className="text-sm font-medium">Read more</span>
                     <ArrowRight className="ml-1 h-3 w-3" />
                   </div>
