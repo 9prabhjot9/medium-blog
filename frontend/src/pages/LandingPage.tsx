@@ -40,7 +40,7 @@ export default function LandingPage() {
               <div className="w-10 h-10 bg-yellow-400 rounded-lg flex items-center justify-center rotate-3 hover:rotate-6 transition-transform duration-300">
                 <BookOpen className="h-5 w-5 text-black" />
               </div>
-              <span className="text-xl font-black text-black">Minimal Blog</span>
+              <span className="text-xl font-black text-black">BlogHub</span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <a href="#" className="text-gray-600 hover:text-black transition-colors relative group font-medium">
@@ -116,12 +116,12 @@ export default function LandingPage() {
       
 
       {/* Footer */}
-      <footer className="py-12 px-6 border-gray-100 bg-white relative z-10">
+      <footer className="py-5 px-6 border-gray-100 bg-white relative ">
         <div className="max-w-6xl mx-auto">
          
         
-          <div className="mt-32 pt-8 border-t border-gray-100 text-center text-sm text-gray-600">
-            © 2025 Minimal Blog. Crafted with care for writers and readers.
+          <div className="mt-6 pt-8 border-t border-gray-100 text-center text-sm text-gray-600">
+            © 2025 BlogHub. Crafted with care for writers and readers.
           </div>
         </div>
       </footer>
