@@ -70,7 +70,7 @@ export default function LandingPage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="py-20 px-6 relative z-10">
+      <section className="py-20 px-6 relative z-10 mt-9">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -98,18 +98,13 @@ export default function LandingPage() {
               </div>
             </div>
 
-            <div className="relative">
+            <div className="relative w-180">
               <div className="relative from-yellow-100 to-yellow-200 rounded-3xl p-9 border border-none shadow-xl" >
                 <img
                   src="/blogger.png"
                   alt="Blogger at work"
                   className="w-full h-90  object-cover rounded-2xl wrapper"
                 />
-
-                
-                
-
-               
               </div>
             </div>
           </div>
@@ -118,109 +113,14 @@ export default function LandingPage() {
 
      
 
-      {/* Featured Articles Preview */}
-      <section className="py-16 px-6 bg-gray-50 relative z-10">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black text-black mb-4">Latest Articles</h2>
-            <p className="text-lg text-gray-600">Fresh perspectives and insights from my writing journey.</p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              { title: "The Art of Minimalist Writing", category: "Writing Tips", color: "bg-blue-100 text-blue-800" },
-              { title: "Building Communities That Last", category: "Community", color: "bg-green-100 text-green-800" },
-              { title: "Growth Mindset for Creators", category: "Growth", color: "bg-purple-100 text-purple-800" },
-            ].map((article, i) => (
-              <Link to="/blogs"> 
-              <Card
-                key={i}
-                className="border-0 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group cursor-pointer overflow-hidden bg-white rounded-3xl"
-              >
-                <div className="aspect-video bg-gradient-to-br from-gray-100 to-gray-200 overflow-hidden relative">
-                  <img
-                    src={`/minimalist-blog-article-.png?height=200&width=400&query=minimalist blog article ${article.title}`}
-                    alt={article.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute top-4 left-4">
-                    <span className={`px-3 py-1 rounded-full text-xs font-medium ${article.color}`}>
-                      {article.category}
-                    </span>
-                  </div>
-                </div>
-                <CardContent className="p-6">
-                  <div className="text-sm text-gray-500 mb-2">5 min read • 2 days ago</div>
-                  <h3 className="text-xl font-bold text-black mb-3">
-                    {article.title}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    Discover how less can be more when it comes to crafting compelling stories that resonate with
-                    readers.
-                  </p>
-                  <div className="mt-4 flex items-center  opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-2 group-hover:translate-x-0">
-                    <span className="text-sm font-medium">Read more</span>
-                    <ArrowRight className="ml-1 h-3 w-3" />
-                  </div>
-                </CardContent>
-              </Card>
-              </Link>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Button className="bg-white text-black border-2 border-black hover:bg-black hover:text-white hover:scale-105 transition-all duration-300 rounded-full px-8 py-3 font-bold">
-              View All Articles
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 px-6 bg-black text-white relative overflow-hidden z-10">
-        <div className="absolute inset-0 opacity-10">
-          <div
-            className="absolute top-10 left-10 w-20 h-20 border-2 border-yellow-400 rounded-full animate-spin"
-            style={{ animationDuration: "10s" }}
-          ></div>
-          <div className="absolute top-40 right-20 w-32 h-32 border border-white/20 rounded-lg rotate-45"></div>
-          <div className="absolute bottom-20 left-1/3 w-16 h-16 bg-yellow-400 rounded-full opacity-30"></div>
-        </div>
-
-        <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h2 className="text-4xl md:text-5xl font-black mb-6">Ready to Start Your Journey?</h2>
-          <p className="text-xl opacity-90 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Join me on this creative journey. Let's build something amazing together and grow our community of
-            passionate creators.
-          </p>
-         
-        </div>
-      </section>
+      
 
       {/* Footer */}
-      <footer className="py-12 px-6 border-t border-gray-100 bg-white relative z-10">
+      <footer className="py-12 px-6 border-gray-100 bg-white relative z-10">
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex items-center space-x-2 mb-4 md:mb-0">
-              <div className="w-8 h-8 bg-yellow-400 rounded-lg flex items-center justify-center">
-                <BookOpen className="h-4 w-4 text-black" />
-              </div>
-              <span className="font-bold text-black">Minimal Blog</span>
-            </div>
-            <div className="flex space-x-6 text-sm text-gray-600">
-              <a href="#" className="hover:text-black transition-colors">
-                Privacy
-              </a>
-              <a href="#" className="hover:text-black transition-colors">
-                Terms
-              </a>
-              <a href="#" className="hover:text-black transition-colors">
-                Support
-              </a>
-            </div>
-          </div>
-          <div className="mt-8 pt-8 border-t border-gray-100 text-center text-sm text-gray-600">
+         
+        
+          <div className="mt-32 pt-8 border-t border-gray-100 text-center text-sm text-gray-600">
             © 2025 Minimal Blog. Crafted with care for writers and readers.
           </div>
         </div>
