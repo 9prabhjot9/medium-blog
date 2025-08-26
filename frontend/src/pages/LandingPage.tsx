@@ -86,41 +86,29 @@ export default function LandingPage() {
                 I'm a passionate blogger with a minimalist approach. Clean writing, meaningful stories, and ideas that
                 inspire growth.
               </p>
+              <Link to="/blogs">
+              
               <Button
                 size="lg"
                 className="bg-yellow-400 text-black hover:bg-yellow-500 hover:scale-105 transition-all duration-300 text-lg px-8 py-6 rounded-full font-bold shadow-lg border-b-black "
               >
                 Start Reading
               </Button>
+              </Link>
             </div>
 
             <div className="relative">
-              <div className="relative bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-3xl p-8 border border-yellow-300 shadow-xl">
+              <div className="relative from-yellow-100 to-yellow-200 rounded-3xl p-9 border border-none shadow-xl" >
                 <img
                   src="/blogger.png"
                   alt="Blogger at work"
-                  className="w-full h-80 object-cover rounded-2xl"
+                  className="w-full h-90  object-cover rounded-2xl wrapper"
                 />
 
-                {/* Floating UI Elements */}
-                <div
-                  className="absolute -top-4 -right-4 bg-white rounded-2xl p-3 shadow-lg border border-gray-100 animate-bounce"
-                  style={{ animationDelay: "1s", animationDuration: "3s" }}
-                >
-                  <div className="flex items-center space-x-2">
-                    <Heart className="w-4 h-4 text-red-500" />
-                    <span className="text-sm font-medium text-black">1.2k</span>
-                  </div>
-                </div>
-
+                
                 
 
-                <div
-                  className="absolute top-1/2 -right-6 bg-yellow-400 text-black rounded-full p-3 shadow-lg animate-bounce"
-                  style={{ animationDelay: "0.5s", animationDuration: "2s" }}
-                >
-                  <Edit3 className="w-5 h-5" />
-                </div>
+               
               </div>
             </div>
           </div>
@@ -203,13 +191,7 @@ export default function LandingPage() {
             Join me on this creative journey. Let's build something amazing together and grow our community of
             passionate creators.
           </p>
-          <Button
-            size="lg"
-            className="bg-yellow-400 text-black hover:bg-yellow-500 hover:scale-105 transition-all duration-300 text-lg px-8 py-6 rounded-full font-bold shadow-xl"
-          >
-            Let's Connect
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+         
         </div>
       </section>
 
