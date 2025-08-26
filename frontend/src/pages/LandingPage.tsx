@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, BookOpen, Edit3, Users, Zap, Star, Heart, MessageCircle } from "lucide-react"
 import { Link } from "react-router-dom"
+import ReadingButton from "@/components/ReadingButton"
 
 export default function LandingPage() {
   return (
@@ -86,15 +87,15 @@ export default function LandingPage() {
                 I'm a passionate blogger with a minimalist approach. Clean writing, meaningful stories, and ideas that
                 inspire growth.
               </p>
-              <Link to="/blogs">
+              <div className="">
+              <Link to="/blogs">                
               
-              <Button
-                size="lg"
-                className="bg-yellow-400 text-black hover:bg-yellow-500 hover:scale-105 transition-all duration-300 text-lg px-8 py-6 rounded-full font-bold shadow-lg border-b-black "
-              >
+              <ReadingButton> 
                 Start Reading
-              </Button>
+              </ReadingButton>
+
               </Link>
+              </div>
             </div>
 
             <div className="relative">
@@ -131,6 +132,7 @@ export default function LandingPage() {
               { title: "Building Communities That Last", category: "Community", color: "bg-green-100 text-green-800" },
               { title: "Growth Mindset for Creators", category: "Growth", color: "bg-purple-100 text-purple-800" },
             ].map((article, i) => (
+              <Link to="/blogs"> 
               <Card
                 key={i}
                 className="border-0 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group cursor-pointer overflow-hidden bg-white rounded-3xl"
@@ -162,6 +164,7 @@ export default function LandingPage() {
                   </div>
                 </CardContent>
               </Card>
+              </Link>
             ))}
           </div>
 
