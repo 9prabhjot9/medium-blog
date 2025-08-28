@@ -4,7 +4,7 @@ import styled from 'styled-components';
 type  ReadingButtonProps={
     children: React.ReactNode
 }
-const ReadingButton: React.FC<ReadingButtonProps> = ({ children }) => {
+const ReadingButton: React.FC<ReadingButtonProps> = () => {
   return (
     <StyledWrapper>
       <button className="button">
