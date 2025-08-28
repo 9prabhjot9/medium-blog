@@ -1,7 +1,7 @@
 import { Avatar } from "./BlogCard"
 import { Link, useNavigate } from "react-router-dom"
 import NewBlogButton from "./ui/NewBlogButton"
-
+import { BookOpen } from "lucide-react"
 
 export const Appbar = () => {
   const username = localStorage.getItem("username") || "Guest"
@@ -16,11 +16,12 @@ export const Appbar = () => {
 
   return (
     <div className="border-b flex justify-between items-center px-10 py-5">
-
       <Link to="/blogs">
-        <div className="text-2xl font-semibold cursor-pointer">Medium</div>
+        <div className="flex items-center gap-2 text-2xl font-semibold cursor-pointer">
+          <BookOpen className="h-6 w-6 text-black" />
+          <span>BlogHub</span>
+        </div>
       </Link>
-
       <div className="flex items-center gap-4">
 
         <NewBlogButton 

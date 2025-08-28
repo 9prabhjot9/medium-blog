@@ -116,11 +116,11 @@ export default function LandingPage() {
       
 
       {/* Footer */}
-      <footer className="py-5 px-6 border-gray-100 bg-white relative ">
+      <footer className="py-4 px-6 border-gray-100 bg-white relative ">
         <div className="max-w-6xl mx-auto">
          
         
-          <div className="mt-6 pt-8 border-t border-gray-100 text-center text-sm text-gray-600">
+          <div className="mt-28 pt-10 border-t border-gray-100 text-center text-sm text-gray-600">
             © 2025 BlogHub. Crafted with care for writers and readers.
           </div>
         </div>
